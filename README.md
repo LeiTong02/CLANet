@@ -1,2 +1,2 @@
 # CLANet
- Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images
+A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images
