@@ -5,7 +5,7 @@ A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightf
 
 
 <div align="center">
-  <img src="figs/overview.png"/>
+  <img src="figs/framework.png"/>
 </div><br/>
 
 ## Preparation
