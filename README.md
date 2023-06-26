@@ -66,7 +66,7 @@ tools/dist_test.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py work_dirs/pe
 
 
 ## Main Results
---!>   
+-->   
 
 
 ## Acknowledgement
