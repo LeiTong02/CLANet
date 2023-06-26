@@ -61,9 +61,9 @@ tools/dist_train.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py 8 --work-di
 You can evaluate the model following:
 ```bash
 tools/dist_test.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py work_dirs/petr_r50dcn_gridmask_p4/latest.pth 8 --eval bbox
-```
+```-->
 ## Visualize
--->
+
 
 ## Main Results
 -->   
