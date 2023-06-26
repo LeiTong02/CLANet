@@ -6,7 +6,7 @@ A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightf
   <img src="figs/framework.png"/>
 </div><br/>
 CLANet comprises three stages: (1) extracting significant cell patches from the time-series image sequence; (2) self-supervised learning to learn and extract feature embeddings from the extracted patches; (3) feature fusion using the MIL aggregator for predicting cell line identity.
-<!-----
+<!--
 ## Preparation
 This implementation is built upon [detr3d](https://github.com/WangYueFt/detr3d/blob/main/README.md), and can be constructed as the [install.md](./install.md).
 
