@@ -46,27 +46,15 @@ Please put the pretrained weights into ./ckpts/.
   ├── ckpts
   ├── README.md
   ```
-<!--
+
 ## Train & inference
 <!-- ```bash
 git clone https://github.com/megvii-research/PETR.git
 ``` -->
-```bash
-cd PETR
-```
-You can train the model following:
-```bash
-tools/dist_train.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py 8 --work-dir work_dirs/petr_r50dcn_gridmask_p4/
-```
-You can evaluate the model following:
-```bash
-tools/dist_test.sh projects/configs/petr/petr_r50dcn_gridmask_p4.py work_dirs/petr_r50dcn_gridmask_p4/latest.pth 8 --eval bbox
-```-->
 ## Visualize
 
 
-## Main Results
--->   
+## Main Results  
 
 
 ## Acknowledgement
