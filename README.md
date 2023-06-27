@@ -1,6 +1,5 @@
 # CLANet: A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images.
-
-
+CLANet is a pioneering framework for cross-batch cell line identification using brightfield images, specifically designed to tackle three distinct batch effects. The framework comprises three stages: (1) extracting significant cell patches from the time-series image sequence; (2) self-supervised learning to learn and extract feature embeddings from the extracted patches; (3) feature fusion using the MIL aggregator for predicting cell line identity.
 <!-- ## Introduction -->
 <div align="center">
   <img src="figs/framework.png"/>
