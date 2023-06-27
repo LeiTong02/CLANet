@@ -28,6 +28,7 @@ The publication of the Dataset is under AstraZeneca company internal ethic check
   │   ├── ...
   ├── ...
   ```
+  Each cell image has a name like ""
 
 ## Train & inference
 <!-- ```bash
