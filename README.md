@@ -13,7 +13,8 @@ This implementation is built upon pytorch==1.8.1+cuda111, the environment requir
 ```
 pip install -r requirements.txt
 ```
-
+## Dataset
+The publication of the Dataset is under AstraZeneca company 
 * Environments  
   Linux, Python==3.6.8, CUDA == 11.2, pytorch == 1.9.0, mmdet3d == 0.17.1   
 
