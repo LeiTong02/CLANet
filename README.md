@@ -5,10 +5,10 @@ A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightf
 <div align="center">
   <img src="figs/framework.png"/>
 </div><br/>
-CLANet comprises three stages: (1) extracting significant cell patches from the time-series image sequence; (2) self-supervised learning to learn and extract feature embeddings from the extracted patches; (3) feature fusion using the MIL aggregator for predicting cell line identity.
+A time-series cell image sequence $\mathbb{X}_{s}$ is obtained from a single microscopy location within a flask. Each cell image $X_{n}$ undergoes the Cell Cluster-level Selection to generate patches $Q_{n}$. Patch embeddings are extracted from patches using self-supervised learning, forming the patch embedding sequence $\mathbb{F}_{s}$. During training, the Time-series Segment Sampling is applied to sample the patch embedding sequence into several snippets, which are then fed into a multiple instance learning (MIL) aggregator to compute the classification loss $\mathcal{L}_{cla}$. During the inference stage, the complete embedding sequence is directly passed into the MIL aggregator to obtain the predicted label.
 
 ## Preparation
-This implementation is built upon pytorch==1.8.1+cuda111, the detailed environment requirements can be configured:
+This implementation is built upon pytorch==1.8.1+cuda111, the environment requirements can be configured:
 ```
 pip install -r requirements.txt
 ```
