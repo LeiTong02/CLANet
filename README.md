@@ -31,8 +31,12 @@ The Dataset is currently undergoing internal ethical checking at AstraZeneca com
 Each cell image in the dataset follows a naming convention such as "VID1709_G7_1_02d12h00m.jpg". Here, "VID1709" represents the index of the biological experiments (not relevant to this work), "G7" indicates the flask position that helps us split samples into sequences (or bags) in MIL (Multiple Instance Learning), "1" is the flask ID (not used), and "02d12h00m" denotes the incubation timepoint. This timepoint means that the image was collected on the 2nd day, 12 hours, and 00 minutes.
 
 ## Train & inference
-The patch selection stage includes generating binary masks and cell cluster 
+The patch selection stage includes generating binary masks and cell cluster-level selection. 
 * Generate binary Masks for cell images
+```
+pip install -r requirements.txt
+```
+* Cell cluster-level selection
 ## Visualize
 
 
