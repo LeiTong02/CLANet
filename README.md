@@ -58,7 +58,7 @@ git clone https://github.com/megvii-research/PETR.git
 
 
 ## Acknowledgement
-Many thanks to the authors of [dino](https://github.com/facebookresearch/dino).
+Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), [SelectiveSearch](https://github.com/AlpacaTechJP/selectivesearch) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL/blob/master/model.py).
 
 
 ## Citation
