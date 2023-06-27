@@ -18,14 +18,15 @@ The publication of the Dataset is under AstraZeneca company internal ethic check
 * After data preparation, you will be able to see the following directory structure:  
   ```
   Cell_lines
-  ├── A427
+  ├── A427 (cell line name)
   ├── A549
-  │   ├── batch$\_$1
+  │   ├── batch_1
   │     ├── cell_image1.png
   │     ├── cell_image2.png
   │     ├── ...
-  │   ├── batch$\_$2
+  │   ├── batch_2
   │   ├── ...
+  ├── ...
   ```
 
 ## Train & inference
