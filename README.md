@@ -8,7 +8,10 @@ A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightf
 CLANet comprises three stages: (1) extracting significant cell patches from the time-series image sequence; (2) self-supervised learning to learn and extract feature embeddings from the extracted patches; (3) feature fusion using the MIL aggregator for predicting cell line identity.
 
 ## Preparation
-This implementation is built upon pytorch, and can be constructed as the [install.md](./install.md).
+This implementation is built upon pytorch==1.8.1+cuda111, the detailed environment requirements can be configured:
+```
+pip install -r requirements.txt
+```
 
 * Environments  
   Linux, Python==3.6.8, CUDA == 11.2, pytorch == 1.9.0, mmdet3d == 0.17.1   
