@@ -32,13 +32,11 @@ Each cell image in the dataset follows a naming convention such as "VID1709_G7_1
 
 ## 1. Patch Selection
 The patch selection stage involves two steps: generating binary masks for cell images and performing cell cluster-level selection.
-* Generate binary Masks for cell images
-  To generate binary masks for cell images, please modify the input path to the data path and run the following command:
+* Generate binary Masks for cell images (please modify the input path to the data path):
   ```
   python generate_binary_masks.py
   ```
-* Cell cluster-level selection
-  To perform cell cluster-level selection, run the following command:
+* Cell cluster-level selection:
   ```
   python cell_cluster_selection.py
   ```
