@@ -14,8 +14,8 @@ This implementation is built upon pytorch==1.8.1+cuda111, the environment can be
 pip install -r requirements.txt
 ```
 ## Dataset
-The publication of the Dataset is under AstraZeneca company internal ethic checking, will come soon.
-* After data preparation, you will be able to see the following directory structure:  
+The Dataset is currently undergoing internal ethical checking at AstraZeneca company and will be published soon.
+* After the data preparation, you will find the following directory structure:  
   ```
   Cell_lines
   ├── A427 (cell line name)
@@ -28,7 +28,7 @@ The publication of the Dataset is under AstraZeneca company internal ethic check
   │   ├── ...
   ├── ...
   ```
-  Each cell image has a name like ""
+Each cell image in the dataset follows a naming convention such as "VID1709_G7_1_02d12h00m.jpg". Here, "VID1709" represents the index of the biological experiments (not relevant to this work), "G7" indicates the flask position that helps us split samples into sequences (or bags) in MIL (Multiple Instance Learning), "1" is the flask ID (not used), and "02d12h00m" denotes the incubation timepoint. This timepoint means that the image was collected on the 2nd day, 12 hours, and 00 minutes.
 
 ## Train & inference
 <!-- ```bash
