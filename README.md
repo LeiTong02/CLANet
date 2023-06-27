@@ -48,7 +48,7 @@ After that, you will find the folloiwng mask directory structure (similar with y
   │   ├── batch_1
   │     ├── cell_mask1.png
   │     ├── cell_mask2.png
-  │     ├── patches.npy
+  │     ├── patches.npy (patch locations)
   │     ├── ...
   │   ├── batch_2
   │   ├── ...
