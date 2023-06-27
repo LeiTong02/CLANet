@@ -33,9 +33,9 @@ Each cell image in the dataset follows a naming convention such as "VID1709_G7_1
 ## Train & inference
 The patch selection stage includes generating binary masks and cell cluster-level selection. 
 * Generate binary Masks for cell images
-```
-pip install -r requirements.txt
-```
+  ```
+  pip install -r requirements.txt
+  ```
 * Cell cluster-level selection
 ## Visualize
 
