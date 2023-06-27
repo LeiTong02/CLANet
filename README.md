@@ -1,9 +1,8 @@
 # CLANet: A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images.
-When $a \ne 0$, there are two solutions to $ax^2 + bx + c = 0$ and they are:
-$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+A time-series cell image sequence $\mathbb{X}$
 
-_Square root of 9_
-$$\sqrt{9}$$
+$\mathbb{X}_{s}$ is obtained from a single microscopy location within a flask. Each cell image $X_{n}$ undergoes the Cell Cluster-level Selection to generate patches $Q_{n}$. Patch embeddings are extracted from patches using self-supervised learning, forming the patch embedding sequence $\mathbb{F}_{s}$. During training, the Time-series Segment Sampling is applied to sample the patch embedding sequence into several snippets, which are then fed into a multiple instance learning (MIL) aggregator to compute the classification loss $\mathcal{L}_{cla}$. During the inference stage, the complete embedding sequence is directly passed into the MIL aggregator to obtain the predicted label.
+
 <!-- ## Introduction -->
 <div align="center">
   <img src="figs/framework.png"/>
