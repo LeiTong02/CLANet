@@ -30,13 +30,31 @@ The Dataset is currently undergoing internal ethical checking at AstraZeneca com
   ```
 Each cell image in the dataset follows a naming convention such as "VID1709_G7_1_02d12h00m.jpg". Here, "VID1709" represents the index of the biological experiments (not relevant to this work), "G7" indicates the flask position that helps us split samples into sequences (or bags) in MIL (Multiple Instance Learning), "1" is the flask ID (not used), and "02d12h00m" denotes the incubation timepoint. This timepoint means that the image was collected on the 2nd day, 12 hours, and 00 minutes.
 
-## Train & inference
+## 1. Patch Selection
 The patch selection stage includes generating binary masks and cell cluster-level selection. 
-* Generate binary Masks for cell images
+* Generate binary Masks for cell images (modify the input path to the data path)
   ```
-  pip install -r requirements.txt
+  python generate_binary_masks.py
   ```
 * Cell cluster-level selection
+  ```
+  python cell_cluster_selection.py
+  ```
+After that, you will find the folloiwng mask directory structure (similar with your data folder):
+  ```
+  image_masks
+  ├── A427
+  ├── A549
+  │   ├── batch_1
+  │     ├── cell_mask1.png
+  │     ├── cell_mask2.png
+  │     ├── patches.npy
+  │     ├── ...
+  │   ├── batch_2
+  │   ├── ...
+  ├── ...
+  ```
+
 ## Visualize
 
 
