@@ -89,12 +89,10 @@ We introduce two strategies for splitting the data into training and test sets.
   |:-------------:|--------------|-----------|-------------|----------|
   | CLANet (ours) |     89.1%    |   90.7%   |    83.7%    | 87.0%    |
 * Batch-stratified: In this strategy, both the training and test sets contain data from all experimental batches. The data are split within each batch, forming the sets. The sizes of the training and test sets are made roughly the same as in the batch-separated split. This split strategy is used to explore the influence of batch effects on classification performance in comparison to other methods.
+  |     Model     | Sequence\_Acc | Batch\_Acc | Sequence\_F1 | Batch\_F1 |
+  |:-------------:|--------------|-----------|-------------|----------|
+  | CLANet (ours) |     99.9%    |   100.0%   |    99.9%    | 100.0%    |
 Please refer to the [experiment_setup](https://github.com/LeiTong02/CLANet/tree/main/experiment_setup) directory in the GitHub repository for more details on the random split implementation.
-
-
-|     Model     | Sequence\_Acc | Batch\_Acc | Sequence\_F1 | Batch\_F1 |
-|:-------------:|--------------|-----------|-------------|----------|
-| CLANet (ours) |     89.1%    |   90.7%   |    83.7%    | 87.0%    |
 
 ## Acknowledgement
 Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), [SelectiveSearch](https://github.com/AlpacaTechJP/selectivesearch) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL/blob/master/model.py).
