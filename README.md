@@ -55,7 +55,7 @@ Once these steps are completed, you will find the following directory structure 
   ├── ...
   ```
 
-## 2. Self-supervised Learning
+## 2. Self-Supervised Learning for Feature Embedding
 To train the self-supervised learning (SSL) model with the ViT-small network on a single node using 2 NVIDIA Tesla V100 GPUs 32GB for 200 epochs, use the following commands:
 ```
 python -m torch.distributed.launch --nproc_per_node=2 main_dino_patch.py --arch vit_small --batch_size_per_gpu 128 --epochs 200
@@ -64,7 +64,11 @@ To extract feature embeddings from the trained model, execute the following comm
 ```
 python -m torch.distributed.launch --nproc_per_node=2 get_patch_prediction.py --sample_level patch --output_level features
 ```
-## Main Results  
+The extracted patch features will be saved in the following directory structure:
+```
+./image_masks/cell_line_name/batch_ID/patch_features.npy
+```
+## 3. Multiple Instance Learning for feature fusion
 
 
 ## Acknowledgement
