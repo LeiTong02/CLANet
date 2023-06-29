@@ -58,6 +58,7 @@ Once these steps are completed, you will find the following directory structure 
 ## 2. Self-Supervised Learning for Feature Embedding
 To train the self-supervised learning (SSL) model with the ViT-small network on a single node using 2 NVIDIA Tesla V100 GPUs 32GB for 200 epochs, use the following commands:
 ```
+cd dino
 python -m torch.distributed.launch --nproc_per_node=2 main_dino_patch.py --arch vit_small --batch_size_per_gpu 128 --epochs 200
 ```
 To extract feature embeddings from the trained model, execute the following command:
@@ -68,8 +69,18 @@ The extracted patch features will be saved in the following directory structure:
 ```
 ./image_masks/cell_line_name/batch_ID/patch_features.npy
 ```
-## 3. Multiple Instance Learning for feature fusion
+## 3. Multiple Instance Learning for Feature Fusion
+After completing the previous steps, the TSS\_MIL can be trained using the following command:
+```
+python train_TSS_MIL.py --split batch_separated
+```
+The --split option specifies the evaluation tasks for the model. The evaluation results can be found in the following directory:
+```
+./experimental_models/selected_evaluation_task/random_ID/CLANet/log.txt
+```
+The results are presented as (top 1 acc, top 3 acc, top 5 acc, F1 score, AUC) for both sequence and batch levels in the validation columns.
 
+Alternatively, you can run the jyputer script [model_evaluate.ipynb](https://github.com/LeiTong02/CLANet/model_evaluate.ipynb) to display the performance on the test set.
 
 ## Acknowledgement
 Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), [SelectiveSearch](https://github.com/AlpacaTechJP/selectivesearch) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL/blob/master/model.py).
