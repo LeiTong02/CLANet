@@ -80,7 +80,21 @@ The --split option specifies the evaluation tasks for the model. The evaluation 
 ```
 The results are presented as (top 1 acc, top 3 acc, top 5 acc, F1 score, AUC) for both sequence and batch levels in the validation columns.
 
-Alternatively, you can run the jyputer script [model_evaluate.ipynb](https://github.com/LeiTong02/CLANet/model_evaluate.ipynb) to display the performance on the test set.
+Alternatively, you can run the jupyter script [model_evaluate.ipynb](https://github.com/LeiTong02/CLANet/blob/main/model_evaluate.ipynb) to display the performance on the test set.
+
+## Main Results:
+We introduce two strategies for splitting the data into training and test sets.
+* Batch-separated: We randomly select 1 batch of data from each of the 32 cell classes as the training set, while the remaining 61 batches are assigned to the test set. In this way, the experimental batches in the test set differ from those in the training set, enabling the evaluation of cross-batch generalization (i.e. out-of-domain generalization) performance.
+  |     Model     | Sequence\_Acc | Batch\_Acc | Sequence\_F1 | Batch\_F1 |
+  |:-------------:|--------------|-----------|-------------|----------|
+  | CLANet (ours) |     89.1%    |   90.7%   |    83.7%    | 87.0%    |
+* Batch-stratified: In this strategy, both the training and test sets contain data from all experimental batches. The data are split within each batch, forming the sets. The sizes of the training and test sets are made roughly the same as in the batch-separated split. This split strategy is used to explore the influence of batch effects on classification performance in comparison to other methods.
+Please refer to the [experiment_setup](https://github.com/LeiTong02/CLANet/tree/main/experiment_setup) directory in the GitHub repository for more details on the random split implementation.
+
+
+|     Model     | Sequence\_Acc | Batch\_Acc | Sequence\_F1 | Batch\_F1 |
+|:-------------:|--------------|-----------|-------------|----------|
+| CLANet (ours) |     89.1%    |   90.7%   |    83.7%    | 87.0%    |
 
 ## Acknowledgement
 Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), [SelectiveSearch](https://github.com/AlpacaTechJP/selectivesearch) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL/blob/master/model.py).
