@@ -28,7 +28,7 @@ The Dataset is currently undergoing internal ethical checking at AstraZeneca com
   │   ├── ...
   ├── ...
   ```
-Each cell image in the dataset follows a naming convention such as "VID1709_G7_1_02d12h00m.jpg". Here, "VID1709" represents the index of the biological experiments (not relevant to this work), "G7" indicates the flask position that helps us split samples into sequences (or bags) in MIL (Multiple Instance Learning), "1" is the flask ID (not used), and "02d12h00m" denotes the incubation timepoint. This timepoint means that the image was collected on the 2nd day, 12 hours, and 00 minutes.
+Each cell image in the dataset follows a naming convention such as "VID1709\_G7\_1\_02d12h00m.jpg". Here, "VID1709" represents the index of the biological experiments (not relevant to this work), "G7" indicates the flask position that helps us split samples into sequences (or bags) in MIL (Multiple Instance Learning), "1" is the flask ID (not used), and "02d12h00m" denotes the incubation timepoint. This timepoint means that the image was collected on the 2nd day, 12 hours, and 00 minutes.
 
 ## 1. Patch Selection
 The patch selection stage involves two steps: generating binary masks for cell images and performing cell cluster-level selection.
