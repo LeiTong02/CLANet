@@ -101,13 +101,11 @@ Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), 
 ## Citation
 If you find this project useful for your research, please consider citing: 
 ```bibtex   
-@misc{tong2023clanet,
-      title={CLANet: A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images}, 
-      author={Lei Tong and Adam Corrigan and Navin Rathna Kumar and Kerry Hallbrook and Jonathan Orme and Yinhai Wang and Huiyu Zhou},
-      year={2023},
-      eprint={2306.16538},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{tong2023clanet,
+  title={CLANet: A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images},
+  author={Tong, Lei and Corrigan, Adam and Kumar, Navin Rathna and Hallbrook, Kerry and Orme, Jonathan and Wang, Yinhai and Zhou, Huiyu},
+  journal={arXiv preprint arXiv:2306.16538},
+  year={2023}
 }
 ```
 
