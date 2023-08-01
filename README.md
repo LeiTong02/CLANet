@@ -16,7 +16,7 @@ This implementation is built upon pytorch==1.8.1+cuda111, the environment can be
 pip install -r requirements.txt
 ```
 ## Dataset
-AstraZeneca Global Cell Bank Brightfield Image Dataset ([AZGCB-BFID](https://az.app.box.com/s/wekw8oryr867e0ykva30vdba1434p3os)) has been published. For a detailed dataset description, please refer to [dataset description]. In this work, we utilized 32 cell lines, and each cell line contains multiple batches of data. The names of the cell lines used can be found in [train_32class_batch_idx.txt](https://github.com/LeiTong02/CLANet/blob/main/train_32class_batch_idx.txt).
+AstraZeneca Global Cell Bank Brightfield Image Dataset ([AZGCB-BFID](https://az.app.box.com/s/wekw8oryr867e0ykva30vdba1434p3os)) has been published. For a detailed dataset description, please refer to [dataset description] (https://github.com/LeiTong02/CLANet/tree/main/datasets/readme.md). In this work, we utilized 32 cell lines, and each cell line contains multiple batches of data. The names of the cell lines used can be found in [train_32class_batch_idx.txt](https://github.com/LeiTong02/CLANet/blob/main/train_32class_batch_idx.txt).
 * After the data preparation, you will find the following directory structure:  
   ```
   Cell_lines
