@@ -1,4 +1,4 @@
-![image](https://github.com/LeiTong02/CLANet/assets/26090828/de2322ed-c5db-4f6b-89c2-3fbe21fbf254)# AstraZeneca Global Cell Bank Brightfield Image Dataset 
+# AstraZeneca Global Cell Bank Brightfield Image Dataset 
 ## Background 
 Cell line authentication is a critical aspect of biomedical research to ensure accurate and reliable results. Traditional methods, such as short tandem repeat (STR) analysis, have limitations due to their cost and time requirements. In recent years, deep neural networks and computer vision techniques have shown great promise in cost-effective cellular image analysis. However, the lack of centralized datasets raises questions about whether cell image classification can replace or support cell line authentication. Considering the advantages of brightfield imaging, including simplified setup, the ability to track cell genealogies in long-term experiments, and its low cost, we aim to automate the cell line authentication process using deep learning and computer vision techniques based on brightfield cell images.
 
