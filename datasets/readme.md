@@ -10,7 +10,7 @@ To facilitate our research, we have curated a dataset consisting of sample image
 Fig. 1 provides an example of our data collection process. Cells were thawed and seeded into flasks (Corning) at a density of 0.5-2×10^6 cells per flask. The flasks were then placed in the Incucyte S3 system (Essen Bioscience, Sartorius), and brightfield images were captured from various locations within the flask at regular intervals ranging from 1 to 8 hours. This process was conducted over a time period of 3 to 18 days. All images were exported in JPEG format with a size of 1408×1040 (96×96dpi).
 
 
-
+Table 1.  List of 44 cell lines. All base medium was purchased from Sigma Aldrich, and supplemented with 10% FBS (Sigma Aldrich) and 1x GlutaMAX (Gibco) unless otherwise stated.
 |     Cell Line Name    |     Source                        |     Base Medium                                                                                                                                                         |
 |-----------------------|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |     A427              |     ATCC                          |     EMEM                                                                                                                                                                |
