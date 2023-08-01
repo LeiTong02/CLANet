@@ -1,4 +1,5 @@
-# CLANet: A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images. [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.16538) [![dataset](https://img.shields.io/badge/dataset-blue)](https://az.app.box.com/s/wekw8oryr867e0ykva30vdba1434p3os)
+# CLANet: A Comprehensive Framework for Cross-Batch Cell Line Identification Using Brightfield Images. 
+[![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2306.16538) [![dataset](https://img.shields.io/badge/dataset-blue)](https://az.app.box.com/s/wekw8oryr867e0ykva30vdba1434p3os)
 
 CLANet is a pioneering framework for cross-batch cell line identification using brightfield images, specifically designed to tackle three distinct batch effects. The framework comprises three stages: (1) extracting significant cell patches from the time-series image sequence; (2) self-supervised learning to learn and extract feature embeddings from the extracted patches; (3) feature fusion using the MIL aggregator for predicting cell line identity.
 
@@ -15,7 +16,7 @@ This implementation is built upon pytorch==1.8.1+cuda111, the environment can be
 pip install -r requirements.txt
 ```
 ## Dataset
-The Dataset is currently undergoing internal ethical checking at AstraZeneca company and will be published soon.
+AstraZeneca Global Cell Bank Brightfield Image Dataset ([AZGCB-BFID](https://az.app.box.com/s/wekw8oryr867e0ykva30vdba1434p3os)) has been published. For a detailed dataset description, please refer to [dataset description]. In this work, we utilized 32 cell lines, and each cell line contains multiple batches of data. The names of the cell lines used can be found in [train_32class_batch_idx.txt](https://github.com/LeiTong02/CLANet/blob/main/train_32class_batch_idx.txt).
 * After the data preparation, you will find the following directory structure:  
   ```
   Cell_lines
