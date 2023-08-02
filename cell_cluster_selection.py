@@ -290,17 +290,12 @@ def _extract_neighbours(regions):
 
 def cluster_selection(
         im_orig, binary_mask, request_bbox_size, img_size, bb_num_limit=500, final_region=20):
-    '''Selective Search
+    '''
     Parameters
     ----------
         im_orig : ndarray
             Input image
-        scale : int
-            Free parameter. Higher means larger clusters in felzenszwalb segmentation.
-        sigma : float
-            Width of Gaussian kernel for felzenszwalb segmentation.
-        min_size : int
-            Minimum component size for felzenszwalb segmentation.
+       
     Returns
     -------
         img : ndarray
@@ -481,7 +476,7 @@ def load_batch_data(input_path,mask_path):
 
             np.save(os.path.join(mask_batch_path,'patches.npy'),pl_dict)
 
-    print('All masks have been generated')
+    print('All patches have been extracted!')
 
 
 if __name__ == '__main__':
