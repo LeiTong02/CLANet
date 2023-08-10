@@ -20,7 +20,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 class Cell_Images(Dataset):
-    """Face Landmarks dataset."""
+   
 
     def __init__(self, data_path, label_id_path_file=None, train=True,sup_train=False, transform=None, shuffle=False, remove_times=0
                  , selected_cell_data=None,batch_id=None):
@@ -200,7 +200,7 @@ class Cell_Images(Dataset):
 
 
 class Cell_masked_patches(Dataset):
-    """Face Landmarks dataset."""
+   
 
     def __init__(self, data_path, label_id_path_file=None, train=True,sup_train=False, transform=None, shuffle=False, remove_times=0
                  , selected_cell_data=None,batch_id=None,patch_npy_root=None):
