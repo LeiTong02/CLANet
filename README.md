@@ -10,6 +10,19 @@ CLANet is a pioneering framework for cross-batch cell line identification using 
 
 A time-series cell image sequence $\mathbb{X}\_{s}$ is obtained from a single microscopy location within a flask. Each cell image $X\_{n}$ undergoes the Cell Cluster-level Selection to generate patches $Q\_{n}$. Patch embeddings are extracted from patches using self-supervised learning, forming the patch embedding sequence $\mathbb{F}\_{s}$. During training, the Time-series Segment Sampling is applied to sample the patch embedding sequence into several snippets, which are then fed into a multiple instance learning (MIL) aggregator to compute the classification loss $\mathcal{L}\_{cla}$. During the inference stage, the complete embedding sequence is directly passed into the MIL aggregator to obtain the predicted label.
 
+## Citation
+If you find this project useful for your research, please consider citing: 
+```bibtex   
+@article{tong2024clanet,
+  title={CLANet: A comprehensive framework for cross-batch cell line identification using brightfield images},
+  author={Tong, Lei and Corrigan, Adam and Kumar, Navin Rathna and Hallbrook, Kerry and Orme, Jonathan and Wang, Yinhai and Zhou, Huiyu},
+  journal={Medical Image Analysis},
+  pages={103123},
+  year={2024},
+  publisher={Elsevier}
+}
+```
+
 ## Preparation
 This implementation is built upon pytorch==1.8.1+cuda111, the environment can be configured:
 ```
@@ -99,19 +112,6 @@ Please refer to the [experiment_setup](https://github.com/LeiTong02/CLANet/tree/
 ## Acknowledgement
 Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), [SelectiveSearch](https://github.com/AlpacaTechJP/selectivesearch) and [AttentionDeepMIL](https://github.com/AMLab-Amsterdam/AttentionDeepMIL/blob/master/model.py).
 
-
-## Citation
-If you find this project useful for your research, please consider citing: 
-```bibtex   
-@article{tong2024clanet,
-  title={CLANet: A comprehensive framework for cross-batch cell line identification using brightfield images},
-  author={Tong, Lei and Corrigan, Adam and Kumar, Navin Rathna and Hallbrook, Kerry and Orme, Jonathan and Wang, Yinhai and Zhou, Huiyu},
-  journal={Medical Image Analysis},
-  pages={103123},
-  year={2024},
-  publisher={Elsevier}
-}
-```
 
 ## Contact
 If you have any questions, feel free to open an issue or contact us at lt228@leicester.ac.uk.
