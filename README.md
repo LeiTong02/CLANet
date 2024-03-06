@@ -103,16 +103,13 @@ Many thanks to the authors of [dino](https://github.com/facebookresearch/dino), 
 ## Citation
 If you find this project useful for your research, please consider citing: 
 ```bibtex   
-@article{TONG2024103123,
-title = {CLANet: A comprehensive framework for cross-batch cell line identification using brightfield images},
-journal = {Medical Image Analysis},
-volume = {94},
-pages = {103123},
-year = {2024},
-issn = {1361-8415},
-doi = {https://doi.org/10.1016/j.media.2024.103123},
-url = {https://www.sciencedirect.com/science/article/pii/S1361841524000483},
-author = {Lei Tong and Adam Corrigan and Navin Rathna Kumar and Kerry Hallbrook and Jonathan Orme and Yinhai Wang and Huiyu Zhou}
+@article{tong2024clanet,
+  title={CLANet: A comprehensive framework for cross-batch cell line identification using brightfield images},
+  author={Tong, Lei and Corrigan, Adam and Kumar, Navin Rathna and Hallbrook, Kerry and Orme, Jonathan and Wang, Yinhai and Zhou, Huiyu},
+  journal={Medical Image Analysis},
+  pages={103123},
+  year={2024},
+  publisher={Elsevier}
 }
 ```
 
