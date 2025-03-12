@@ -17,6 +17,7 @@ If you find this project useful for your research, please consider citing:
   title={CLANet: A comprehensive framework for cross-batch cell line identification using brightfield images},
   author={Tong, Lei and Corrigan, Adam and Kumar, Navin Rathna and Hallbrook, Kerry and Orme, Jonathan and Wang, Yinhai and Zhou, Huiyu},
   journal={Medical Image Analysis},
+  volume={94},
   pages={103123},
   year={2024},
   publisher={Elsevier}
